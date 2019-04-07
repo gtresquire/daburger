@@ -1,0 +1,45 @@
+<div class='container'>
+  <div class='row text-center' id='header'>
+      <div class='col-xs-12 col-sm-12 col-md-12'>
+        <img src='/assets/img/burgerfixins.jpg' alt='Burger Image'>
+        <h1 id='title'>Eat-Da-Burger!</h1>
+      </div>
+  </div>
+  <br/>
+  <div class='row' id='lists'>
+      <div class='col-md-offset-2 col-md-4'>
+        <ul id='edible-list'>
+          {{#each burgers}}
+            {{#unless devoured}}
+              <li>
+                <p class='burger edible-burger'>{{id}}. {{name}}</p>
+                <button class='devour-burger' data-id='{{id}}'>Devour It!</button>
+              </li>
+            {{/unless}}
+          {{/each}}
+        </ul>        
+      </div>
+      <div class='col-md-6'>
+        <ul id='devoured-list'>
+          {{#each burgers}}
+            {{#if devoured}}
+              <li>
+                <p class='burger devoured-burger'>{{id}}. {{name}}</p>
+              </li>
+            {{/if}}
+          {{/each}}
+        </ul>        
+      </div>
+  </div>
+  <br/>
+  <div class='row text-center' id='add'>
+    <div class='col-xs-12 col-sm-12 col-md-12'></div>
+      <form id='add-burger'>
+        <textarea type='text' name='add' id='burger-name'></textarea>
+        <br/>
+        <button id='add-btn' type='submit'>Submit</button>
+        <h4>Enter a burger you want to eat, then click the Submit button!</h4>
+      </form>
+    </div>
+  </div>
+</div>

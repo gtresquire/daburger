@@ -1,0 +1,59 @@
+.container {
+  background-color: #F7D14A;
+}
+
+#title {
+  color: #FF4342;
+  font-size: 3.75em;
+}
+
+ul {
+  list-style: none;
+}
+
+.burger {
+  background-color: #FFFFFF;
+  font-size: 1.25em;
+  padding: .25em;
+  width: 70%;
+}
+
+.edible-burger {
+  border: solid 1px #000000;
+  display: inline-block;
+}
+
+.devoured-burger {
+  border: solid 1px #9F9F9F;
+  border-collapse: collapse;
+  color: #9F9F9F;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.devour-burger {
+  background-color: #FFFFFF;
+  border: solid 1px #000000;
+  font-size: 1.1em;
+  padding: .25em;
+  width: 28%;
+}
+
+#burger-name {
+  background-color: #FFFFFF;
+  border: solid 1px #000000;
+  font-size: 1.25em;
+  height: 3em;
+  width: 24em;
+  text-align: center;
+}
+
+#add-btn {
+  background-color: #008CBA;
+  border: solid 1px #9F9F9F;
+  border-radius: .5em;
+  color: #FFFFFF;
+  font-size: 1.1em;
+  margin: .5em;
+  padding: .5em;
+}
